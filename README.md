@@ -20,7 +20,7 @@ This problem is likely to be faced by the students compare to the staff. Student
 The primary objective of the proposed Leave Management System is to ensure the administration of standard leave policies, centralize the collection and maintenance of leave records, and automate as much of the process as possible. This system allows creating, monitoring, and routing of the leave applications from the applicants to the acting supervisors in the department and to the administrator of the Human Resources Department.
 
 ## OBJECTIVES
-	Easy access to the system at all times regardless the geographical location
+markup : * Easy access to the system at all times regardless the geographical location
 	to enable a confirmatory procedure that staff, students and the organization should use to provide a leave request
  To enable system to provide a vivid proof that staff, students and the organization had their leave request on the system.
  To enable system to have a platform on the follow up of the leave request.
