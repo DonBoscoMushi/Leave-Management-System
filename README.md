@@ -13,4 +13,7 @@
 ## INTRODUCTION
 At some point in our lives we may need to ask for a permit or to request a leave of absence from work. The leave permission maybe for a number of reasons such as a doctor’s appointment, vacation, health issues (illness), family issues, loss of loved ones, birth of a child, relief from excessive job and other more reasons. Afterall we are all humans. The aim of this project is to create a leave management system for university of Dar Es Salaam that can be used by both students and staff that will help to clear any mis confusion of the validity of any leave. 
 
+## PROBLEM STATEMENT
+This problem is likely to be faced by the students compare to the staff. Student have a tendency of leaving their studies without proper protocol. Even so, some of the student leave their studies and miss some of tests expecting when they come back with any reason for their leave will be listened and be accepted to proceed with their studies. But remember, a leave request can be accepted or rejected. There is no guarantee that any request can be granted.
+
 The primary objective of the proposed Leave Management System is to ensure the administration of standard leave policies, centralize the collection and maintenance of leave records, and automate as much of the process as possible. This system allows creating, monitoring, and routing of the leave applications from the applicants to the acting supervisors in the department and to the administrator of the Human Resources Department.
