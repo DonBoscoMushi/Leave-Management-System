@@ -29,12 +29,7 @@ markup : * Easy access to the system at all times regardless the geographical lo
 A large number of students usually have a hard time to explain their leave request. Either the reason for their leave request is accepted or not. Some may miss their test, quiz or even their final examinations due to the time spent trying to prove their leave request or asking for their leave request. An outcome of disturbance and confusion created on among the staff, students and the organization
 
 ## SIGNIFICANCE
-	The system will be used by the staff, students and organization.
-	The system will be used that can be used to proof the any leave request.
-	The system will prevent the chaos among the staff, students and organization.
-	Any other leave request out of the system can not be accepted because only the system will be used to identify all the leave request.
- This will create a bullet point list in your markdown
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
+1.	The system will be used by the staff, students and organization.
+2.	The system will be used that can be used to proof the any leave request.
+3.	The system will prevent the chaos among the staff, students and organization.
+4.	Any other leave request out of the system can not be accepted because only the system will be used to identify all the leave request.
