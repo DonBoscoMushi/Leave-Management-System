@@ -34,7 +34,7 @@ A large number of students usually have a hard time to explain their leave reque
 	The system will prevent the chaos among the staff, students and organization.
 	Any other leave request out of the system can not be accepted because only the system will be used to identify all the leave request.
  This will create a bullet point list in your markdown
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
