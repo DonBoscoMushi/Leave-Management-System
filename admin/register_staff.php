@@ -13,18 +13,18 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Form Samples - Vali Admin</title>
+    <title>Add Staff</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="app sidebar-mini">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="../index.html">Vali</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -76,9 +76,9 @@
         <!-- User Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+            <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="../index.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -88,120 +88,70 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">John Doe</p>
-          <p class="app-sidebar__user-designation">Frontend Developer</p>
+          <p class="app-sidebar__user-name">Don And Me</p>
+          <p class="app-sidebar__user-designation">Beginner Dev</p>
         </div>
       </div>
       <ul class="app-menu">
-        <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item" href="dashboard.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Register New Staff</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
+            <li><a class="treeview-item" href="../bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
             <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-            <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-            <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
+            <li><a class="treeview-item" href="../ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
+            <li><a class="treeview-item" href="../widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
           </ul>
         </li>
         <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
         <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-            <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-            <li><a class="treeview-item active" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-            <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
+            <li><a class="treeview-item" href="../form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
+            <li><a class="treeview-item" href="../form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
+            <li><a class="treeview-item active" href="../form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
+            <li><a class="treeview-item" href="../form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
           </ul>
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-            <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
+            <li><a class="treeview-item" href="../table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
+            <li><a class="treeview-item" href="../table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
           </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-            <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-            <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-            <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-            <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-            <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
-            <li><a class="treeview-item" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
-          </ul>
-        </li>
-        <li><a class="app-menu__item" href="docs.html"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-edit"></i> Form Samples</h1>
-          <p>Sample forms</p>
+          <h1> Leave Management System </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item">Forms</li>
-          <li class="breadcrumb-item"><a href="#">Sample Forms</a></li>
+          <li class="breadcrumb-item">Admin</li>
+          <li class="breadcrumb-item"><a href="#">Register Staff</a></li>
         </ul>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <div class="tile">
-            <h3 class="tile-title">Vertical Form</h3>
-            <div class="tile-body">
-              <form>
-                <div class="form-group">
-                  <label class="control-label">Name</label>
-                  <input class="form-control" type="text" placeholder="Enter full name">
-                </div>
-                <div class="form-group">
-                  <label class="control-label">Email</label>
-                  <input class="form-control" type="email" placeholder="Enter email address">
-                </div>
-                <div class="form-group">
-                  <label class="control-label">Address</label>
-                  <textarea class="form-control" rows="4" placeholder="Enter your address"></textarea>
-                </div>
-                <div class="form-group">
-                  <label class="control-label">Gender</label>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="gender">Male
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="gender">Female
-                    </label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label">Identity Proof</label>
-                  <input class="form-control" type="file">
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox">I accept the terms and conditions
-                    </label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="tile-footer">
-              <button class="btn btn-primary" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
-            </div>
+
           </div>
-        </div>
+        </div> -->
         <div class="col-md-6">
           <div class="tile">
-            <h3 class="tile-title">Register</h3>
+            <h3 class="tile-title"><i class="fa fa-edit"></i> Register New Staff</h3>
             <div class="tile-body">
               <form class="form-horizontal">
                 <div class="form-group row">
-                  <label class="control-label col-md-3">Name</label>
+                  <label class="control-label col-md-3">First Name</label>
                   <div class="col-md-8">
-                    <input class="form-control" type="text" placeholder="Enter full name">
+                    <input class="form-control" type="text" name="firstname" placeholder="Enter first name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-md-3">Last Name</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="text" name="lastname" placeholder="Enter last name">
                   </div>
                 </div>
                 <div class="form-group row">
@@ -210,12 +160,12 @@
                     <input class="form-control col-md-8" type="email" placeholder="Enter email address">
                   </div>
                 </div>
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                   <label class="control-label col-md-3">Address</label>
                   <div class="col-md-8">
                     <textarea class="form-control" rows="4" placeholder="Enter your address"></textarea>
                   </div>
-                </div>
+                </div> -->
                 <div class="form-group row">
                   <label class="control-label col-md-3">Gender</label>
                   <div class="col-md-9">
@@ -227,21 +177,6 @@
                     <div class="form-check">
                       <label class="form-check-label">
                         <input class="form-check-input" type="radio" name="gender">Female
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="control-label col-md-3">Identity Proof</label>
-                  <div class="col-md-8">
-                    <input class="form-control" type="file">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-8 col-md-offset-3">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox">I accept the terms and conditions
                       </label>
                     </div>
                   </div>
@@ -258,35 +193,15 @@
           </div>
         </div>
         <div class="clearix"></div>
-        <div class="col-md-12">
-          <div class="tile">
-            <h3 class="tile-title">Subscribe</h3>
-            <div class="tile-body">
-              <form class="row">
-                <div class="form-group col-md-3">
-                  <label class="control-label">Name</label>
-                  <input class="form-control" type="text" placeholder="Enter your name">
-                </div>
-                <div class="form-group col-md-3">
-                  <label class="control-label">Email</label>
-                  <input class="form-control" type="text" placeholder="Enter your email">
-                </div>
-                <div class="form-group col-md-4 align-self-end">
-                  <button class="btn btn-primary" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
+    <script src="../js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
     <!-- Google analytics script-->
     <script type="text/javascript">

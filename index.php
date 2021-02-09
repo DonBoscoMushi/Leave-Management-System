@@ -38,9 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // $sql = "SELECT username, password FROM users WHERE username = ?";
     $sql = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
-    // $result = mysqli_query($sql, $conn);
-
-  
+    
     // $active = $row['active'];
 
     $result = $mysqli -> query($sql);
@@ -108,11 +106,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
           <h3 class="login-head">SIGN IN</h3>
           <div class="form-group">
             <label class="control-label">USERNAME</label>
-            <input class="form-control" type="text" name="username" placeholder="Email" autofocus>
+            <input class="form-control" type="text" name="username" required="required" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
             <label class="control-label">PASSWORD</label>
-            <input class="form-control" type="password" name="password" placeholder="Password">
+            <input class="form-control" type="password" name="password" required="required" placeholder="Password">
           </div>
           <div class="for m-group">
             <div class="utility">
