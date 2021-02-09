@@ -146,7 +146,7 @@
               <div class="tile">
                   <h3 class="tile-title" style="text-align: center;"><i class="fa fa-edit"></i> Register New Staff</h3>
                   <div class="tile-body">
-                    <form class="form-horizontal" method="post" action="">
+                    <form class="form-horizontal" method="post" action="register.php">
                       <div class="form-group row">
                         <label class="control-label col-md-3">First Name</label>
                         <div class="col-md-8">
@@ -156,19 +156,19 @@
                       <div class="form-group row">
                         <label class="control-label col-md-3">Last Name</label>
                         <div class="col-md-8">
-                          <input class="form-control" type="text" name="lastname" required="required" placeholder="Enter last name">
+                          <input class="form-control" type="text" name="lastname" required="required" name="lastname" placeholder="Enter last name">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label class="control-label col-md-3">Email</label>
                         <div class="col-md-8">
-                          <input class="form-control col-md-8" type="email" required="required" placeholder="Enter email address">
+                          <input class="form-control col-md-8" type="email" required="required" name="email" placeholder="Enter email address">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label class="control-label col-md-3">Role</label>
                         <div class="col-md-8">
-                          <input class="form-control col-md-8" type="text" required="required" placeholder="Enter Role">
+                          <input class="form-control col-md-8" type="text" required="required" name="role" placeholder="Enter Role">
                         </div>
                       </div>
                       <!-- <div class="form-group row">
@@ -195,7 +195,7 @@
                       <div class="tile-footer">
                     <div class="row">
                       <div class="col-md-8 col-md-offset-3">
-                        <button class="btn btn-primary" action="submit" value="Register"><i class="fa fa-fw fa-lg fa-check-circle" ></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i action="reset"class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                        <button class="btn btn-primary" type="submit" value="Register"><i class="fa fa-fw fa-lg fa-check-circle" ></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i action="reset"class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
                       </div>
                     </div>
                   </div>
@@ -229,59 +229,6 @@
     </html>
 
     <?php
-  }
-
-  if($_SERVER["REQUEST_METHOD"] == "POST") {
-    //fetch details
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['last_name'];
-    $email = $_POST['email'];
-    $role = $_POST['role'];
-    $gender = $_POST['gender'];
-    $password = $_POST['lastname'];
-
-    // Sql query
-    $sql1 = "SELECT staff_id FROM users WHERE email = '".$email."' ";
-    $insert = "INSERT INTO users (email, firstname, lastname, gender, password, role) 
-    VALUES ('$email','$firstname', '$lastname', '$gender', '$password', '$role')";
-
-    $result1 = $connection->query($sql1);
-    
-    $row1 = mysqli_fetch_array($result1);
-
-    if($row1 == 0) {
-
-      //no user existing with same email
-      $result2 = $connection->query($insert);
-      $row2 = mysqli_fetch_array($result2);
-
-      // if($result2 == 1){
-      //   echo " <script> 
-      //             alert(\" Staff Added\");
-      //         </script>";
-      //   echo " <script> 
-      //             window.location=\"register_staff.php\"
-      //         </script>";
-      // }
-      // else {
-      //   echo " <script> 
-      //       alert(\" Failed to Add Staff \");
-      //   </script>
-      //   ";
-      // }
-
-
-    }else
-    {
-      // echo 	"<script>
-      //       alert(\"Staff already exist.\");
-      //     </script>";
-      // echo "<script>window.location=\"register_staff.php\";</script>";
-    }
-
-    //close connection
-    mysqli_close($connection);
-
   }
 
 ?>
