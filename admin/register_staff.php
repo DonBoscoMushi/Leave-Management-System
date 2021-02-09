@@ -182,12 +182,12 @@
                         <div class="col-md-9">
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="gender">Male
+                              <input class="form-check-input" type="radio" value="male" name="gender">Male
                             </label>
                           </div>
                           <div class="form-check">
                             <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="gender">Female
+                              <input class="form-check-input" type="radio" value="female" name="gender">Female
                             </label>
                           </div>
                         </div>
