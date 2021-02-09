@@ -11,11 +11,11 @@ $db_username = 'root';
 $password = '';
 $name = 'lms_db';
 
-$mysqli = new mysqli($server_name, $db_username, $password, $name);
+$connection = new mysqli($server_name, $db_username, $password, $name);
 
 //Check connection
-if($mysqli === false){
-    die("Error: Could not connect. " .$conn->connect_error);
+if($connection === false){
+    die("Error: Could not connect. " .$connection->connect_error);
 }
 
 ?>

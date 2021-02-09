@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   if(empty(trim($_POST["username"]))){
     $username_err = "Please enter username.";
     echo $username_err;
-  }else{
+     }else{
     // $myusername = mysqli_real_escape_string($conn, $_POST['username']);
     $username = trim($_POST["username"]);
   }
@@ -37,17 +37,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   if(empty($username_err) && empty($password_err)){
 
     // $sql = "SELECT username, password FROM users WHERE username = ?";
-    $sql = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
+    $sql = "SELECT * FROM users WHERE email = '".$username."' AND password = '".$password."'";
     
     // $active = $row['active'];
 
-    $result = $mysqli -> query($sql);
+    $result = $connection -> query($sql);
 
     $count = mysqli_num_rows($result);
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
     if($count){
+      $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
       while($row){
+
         $role = $row['role'];
         $db_password = $row['password'];
         
@@ -57,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
           $_SESSION['sid'] = session_id();
           $_SESSION['user'] = $role;
           //Open dashboard
-          header("Location: dashboard.php");
+          header("Location: ../admin/register_staff.php");
         }
         else if ((!(strcmp($db_password, $password))) && $role == "Staff")
         {
