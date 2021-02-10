@@ -1,0 +1,17 @@
+## Functional Requirement
+
+The system should allow the users to register/sign up in the system.
+The system should be able to automatically validate users during the sign in to access the system.
+The system should be able to allow the user to write a statement for the leave request.
+The system should be able to allow the user to receive feedback on the posted leave request.
+The system should be able to allow the user to receive feedback on the posted leave request.
+The system should be able to allow the user to view the leave request step by step execution by the organization.
+The system should be able to allow the user to attach a file for more elaboration for the leave request if any.
+The system should provide leave approval and availability.
+The system should be able to show leave history.
+The system should be able to track staff’s and other employee’s records.
+The system should be able to allow the user to write their statement for their leave request.
+The system should be able to provide an interactive user interface to the user.
+The system should be able to provide notification to the user for any new leave request.
+The system should be able to allow the user to log out from the system.
+The system should be able to allow the user to retrieve any leave request that is submitted.
