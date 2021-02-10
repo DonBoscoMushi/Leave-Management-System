@@ -1,10 +1,14 @@
 <?php
 
   require_once "../functions/config.php";
+  require_once "fetch_datails.php";
+
 
   session_start();
   if($_SESSION['sid'] == session_id() && $_SESSION['user'] == "Admin")
   {
+    $user_id = $_SESSION['user_id'];
+
     ?>
 
     <!DOCTYPE html>
@@ -33,7 +37,7 @@
       </head>
       <body class="app sidebar-mini">
         <!-- Navbar-->
-        <header class="app-header"><a class="app-header__logo" font-family="Nunito" href="../index.html">Admin</a>
+        <header class="app-header"><a class="app-header__logo" font-family="Nunito" href="../index.html"><?php echo $_SESSION['user']; ?></a>
           <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
           <!-- Navbar Right Menu-->
           <ul class="app-nav">
@@ -85,7 +89,6 @@
             <!-- User Menu-->
             <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
               <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
                 <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
                 <li><a class="dropdown-item" href="../index.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
               </ul>
@@ -95,38 +98,16 @@
         <!-- Sidebar menu-->
         <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
         <aside class="app-sidebar">
-          <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+          <div class="app-sidebar__user">
             <div>
-              <p class="app-sidebar__user-name">Don And Me</p>
-              <p class="app-sidebar__user-designation">Beginner Dev</p>
+              <p class="app-sidebar__user-name"> <?php echo $firstname." ".$lastname; ?></p>
+              <p class="app-sidebar__user-designation"><?php echo $role; ?></p>
             </div>
           </div>
           <ul class="app-menu">
-            <li><a class="app-menu__item" href="dashboard.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
             <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Register New Staff</span></a></li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
-                <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-                <li><a class="treeview-item" href="../ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-                <li><a class="treeview-item" href="../widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
-              </ul>
-            </li>
-            <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-            <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-                <li><a class="treeview-item" href="../form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-                <li><a class="treeview-item active" href="../form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-                <li><a class="treeview-item" href="../form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
-              </ul>
-            </li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a class="treeview-item" href="../table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-                <li><a class="treeview-item" href="../table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
-              </ul>
-            </li>
+            <li><a class="app-menu__item" href="view_staff.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Staff</span></a></li>
+
           </ul>
         </aside>
         <main class="app-content">

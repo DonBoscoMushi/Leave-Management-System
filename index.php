@@ -51,12 +51,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $role = $row['role'];
         $db_password = $row['password'];
+        $user_id = $row['user_id'];
         
         if((!(strcmp($db_password, $password))) && $role == "Admin")
         {
           session_start();
           $_SESSION['sid'] = session_id();
           $_SESSION['user'] = $role;
+          $_SESSION['user_id'] = $user_id;
           //Open dashboard
           header("Location: ../admin/register_staff.php");
         }
@@ -65,7 +67,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
           session_start();
           $_SESSION['sid'] = session_id();
           $_SESSION['user'] = $role;
-          $_SESSION['staff_id'] = $username;
+          $_SESSION['user_id'] = $user_id;
           echo
           //Opens add_staff page if username and password matches
           header("Location: docs.html");
