@@ -1,7 +1,7 @@
 <?php
 
   require_once "../functions/config.php";
-  require_once "fetch_datails.php";
+  require_once "fetch_details.php";
 
 
   session_start();
