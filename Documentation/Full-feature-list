@@ -1,0 +1,27 @@
+Administrative Settings 
+
+	Choose the types of leave allowed - Sick, Annual, Family Responsibility, Maternity, Study, Unpaid, etc
+	Choose the amount of days allowed for each of the types. A default is set for all the employees, but you can also modify it per employee.
+	Allocate leave annually or monthly depending on your company policies
+	The Leave system administrator can choose set the persons for leave notifications regarding requests, applications, rejections and approvals
+	Administrator or managers can assign additional leave days to employees eg Worked in Leave
+	Choose the approval settings for leave applications
+	
+Employees
+
+	Each employee has a leave summary, showing available leave days they have available, and status of leve applications
+	Access to the Leave software is secured to prevent employees viewing other persons leave statusses
+	Employees can load their own sick notes, supporting documentation 
+	Leave not available cannot be requested eg if there is no annual leave available then the employee cannot request is as annual leave. 
+	Easily apply for leave choosing the required leave type and amount of hours or days
+
+Leave processing and Reporting
+
+	Notifications are received via email by relevant manager/s when a leave application is completed by an employee
+	Pending applications are visible on the Intranet platform when they log in should they not see the email notification
+	Managers can login access the Leave application via the email request provided they are logged in, or be taken to the Intranet allowing them to log in and access the leave application
+	Requests for approval or rejection are shown clearly with reasons for the application
+	Rejections have a field for reasons provided
+	Once the request has been approved or rejected, the applicant / employee will be notified
+	Summary reports are available for administrators whereby management, HR or the persons tasked with managing the employees leave can search via an employee and leave year, to get a summary of the employees current leave applications as well as his outstanding leave days per category such as sick leave, maternity leave, yearly leave etc.
+	Reporting on your Leave Management Software has been made user friendly whereby the information required on the reports can be selected
