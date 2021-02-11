@@ -31,7 +31,7 @@ require_once "fetch_details.php";
   </head>
   <body class="app sidebar-mini">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html"><?php echo $_SESSION['user']; ?></a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -84,7 +84,7 @@ require_once "fetch_details.php";
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="../index.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -129,8 +129,7 @@ require_once "fetch_details.php";
                       <th>Lastname</th>
                       <th>Gender</th>
                       <th>Role</th>
-                      <th>Started At</th>
-                    </tr>
+                      <th>Operation</th>
                   </thead>
                   <tbody>
 
@@ -159,7 +158,11 @@ require_once "fetch_details.php";
                               <td>$lastname</td>
                               <td>$gender</td>
                               <td>$role</td>
-                              <td>$started_at</td>
+                              <td align='centre'>
+                                <div class='tile-title-w-btn'>
+                                  <div class='btn-group'><a class='btn btn-primary' href='#'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
+                                </div>
+                              </td>
                             </tr>
                             
                             ";
@@ -171,7 +174,6 @@ require_once "fetch_details.php";
                       mysqli_close($connection);
                   ?>
                   </tbody>
-
                 </table>
               </div>
             </div>

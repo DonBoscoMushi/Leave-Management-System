@@ -1,3 +1,19 @@
+<?php
+
+  require_once "../functions/config.php";
+  include_once "../admin/fetch_details.php";
+
+  if (empty($_SESSION)){
+    session_start();
+  }
+
+  
+  if($_SESSION['sid'] == session_id() && $_SESSION['user'] = "Staff")
+  {
+    $user_id = $_SESSION['user_id'];
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -134,3 +150,9 @@
     </script>
   </body>
 </html>
+
+    <?php
+
+  }
+
+  ?>

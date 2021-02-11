@@ -1,10 +1,13 @@
 <?php
 
   require_once "../functions/config.php";
-  require_once "fetch_details.php";
+  include_once "fetch_details.php";
 
+  if (empty($_SESSION)){
+    session_start();
+  }
 
-  session_start();
+  
   if($_SESSION['sid'] == session_id() && $_SESSION['user'] == "Admin")
   {
     $user_id = $_SESSION['user_id'];
@@ -90,7 +93,7 @@
             <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
               <ul class="dropdown-menu settings-menu dropdown-menu-right">
                 <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                <li><a class="dropdown-item" href="../index.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
               </ul>
             </li>
           </ul>
