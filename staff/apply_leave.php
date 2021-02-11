@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Staff - Profile</title>
+    <title>Apply Leave</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,23 +56,52 @@
         </div>
       </div>
       <ul class="app-menu">
-        <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-user"></i><span class="app-menu__label">Profile</span></a></li>
+        <li><a class="app-menu__item " href="index.php"><i class="app-menu__icon fa fa-user"></i><span class="app-menu__label">Profile</span></a></li>
         
-        <li><a class="app-menu__item " href="apply_leave.php"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Apply Leave</span></a></li>
+        <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Apply Leave</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-file-code-o"></i> Profile</h1>
+          <h1><i class="fa fa-file-code-o"></i> Apply Leave</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Profile</a></li>
+          <li class="breadcrumb-item"><a href="#">Apply Leave</a></li>
         </ul>
       </div>
 
-
+      <div class="tile">
+            <div class="row">
+              <div class="col-lg-6">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Personal Particulars</label>
+                    <input class="form-control" id="exampleInputName" type="name" aria-describedby="grace " placeholder="Enter name"><small class="form-text text-muted" id="name"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Designation</label>
+                    <input class="form-control" id="exampleInputPlace" type="name" placeholder="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect1">Department</label>
+                    <input class="form-control" id="exampleDepartment" type="department name placeholder="department name>
+                      
+                      
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect2">The following members of my family</label>
+                    <input class="form-control" id="exampleFamily" multiple="members">
+                      
+                    
+                  </div>
+                 
+            <div class="tile-footer">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </div>
 
 
     </main>
@@ -96,8 +125,7 @@
       }
     </script>
   </body>
-</html>
-
+app
     <?php
 
   }
