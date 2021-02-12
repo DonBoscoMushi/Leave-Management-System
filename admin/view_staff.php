@@ -8,18 +8,6 @@ require_once "fetch_details.php";
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <!-- Twitter meta-->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@pratikborsadiya">
-    <meta property="twitter:creator" content="@pratikborsadiya">
-    <!-- Open Graph Meta-->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Vali Admin">
-    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
-    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
-    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
-    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
     <title>View Staff</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -119,9 +107,30 @@ require_once "fetch_details.php";
                               <td>$lastname</td>
                               <td>$gender</td>
                               <td>$role</td>
-                              <td align='centre'>
+                              <td>
                                 <div class='tile-title-w-btn'>
-                                  <div class='btn-group'><a class='btn btn-primary' href='#'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
+                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal' href='#'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
+                                </div>
+                                <!-- Modal -->
+                                <div id='myModal' class='modal fade' role='dialog'>
+                                  <div class='modal-dialog'>
+                                  
+                                  <!-- modal content -->
+                                  <div class='modal-content'>
+                                    <div class='modal-header'>
+                                      
+                                      <button type='button' class='close' data-dismiss='modal'>&times;</button> 
+                                      <h4 class='modal-title'> Update Staff</h4>
+                                    </div>
+                                    <div class='modal-body'>
+                                      <p>I fucking made it</p>
+                                    </div>
+                                    <div class='modal-footer'>
+                                      <button type='button' class='btn btn-default' data-dismiss='modal'>Update</button>
+                                    </div>
+                                  </div>
+                              
+                                  </div>
                                 </div>
                               </td>
                             </tr>
@@ -141,6 +150,8 @@ require_once "fetch_details.php";
           </div>
         </div>
       </div>
+
+
     </main>
     <!-- Essential javascripts for application to work-->
     <script src="../js/jquery-3.3.1.min.js"></script>
