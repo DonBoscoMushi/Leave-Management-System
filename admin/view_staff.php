@@ -109,10 +109,30 @@ require_once "fetch_details.php";
                               <td>$role</td>
                               <td>
                                 <div class='tile-title-w-btn'>
-                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal' href='#'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
+                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal' href='#'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' id='demoSwal' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
                                 </div>
-                                <!-- Modal -->
-                                <div id='myModal' class='modal fade' role='dialog'>
+                                
+                              </td>
+                            </tr>
+                            
+                            ";
+                        }
+                        
+                        $result->free();
+                      }
+                      
+                      mysqli_close($connection);
+                  ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                      <!-- Modal -->
+                      <div id='myModal' class='modal fade' role='dialog'>
                                   <div class='modal-dialog'>
                                   
                                   <!-- modal content -->
@@ -172,7 +192,7 @@ require_once "fetch_details.php";
                                           <div class='tile-footer'>
                                             <div class='row'>
                                               <div class='col-md-8 col-md-offset-3'>
-                                                <button class='btn btn-primary' type='submit' data-dismiss='modal' value='Register'><i class='fa fa-fw fa-lg fa-check-circle' ></i>Update</button>&nbsp;&nbsp;&nbsp;
+                                                <button class='btn btn-primary' type='submit' data-dismiss='modal' id="demoNotify" value='Register'><i class='fa fa-fw fa-lg fa-check-circle' ></i>Update</button>&nbsp;&nbsp;&nbsp;
                                             </div>
                                             </div>
                                           </div>
@@ -183,33 +203,14 @@ require_once "fetch_details.php";
 
                                     <!--  Modal Footer -->
 
-                                    </div>
+                                    <!-- </div>
                                     <div class='modal-footer'>
-                                      <button type='button' class='btn btn-default' data-dismiss='modal'>Update</button>
+                                      <button type='button' class='btn btn-default' id = "demoNotify" data-dismiss='modal'>Update</button>
                                     </div>
-                                  </div>
+                                  </div> -->
                               
                                   </div>
                                 </div>
-                              </td>
-                            </tr>
-                            
-                            ";
-                        }
-                        
-                        $result->free();
-                      }
-                      
-                      mysqli_close($connection);
-                  ?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
     </main>
     <!-- Essential javascripts for application to work-->
@@ -220,6 +221,38 @@ require_once "fetch_details.php";
     <!-- The javascript plugin to display page loading on top-->
     <script src="../js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
+    <script type="text/javascript" src="../js/plugins/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      $('#demoNotify').click(function(){
+      	$.notify({
+      		title: "Update Complete : ",
+      		message: "Something cool is just updated!",
+      		icon: 'fa fa-check' 
+      	},{
+      		type: "info"
+      	});
+      });
+      $('#demoSwal').click(function(){
+      	swal({
+      		title: "Are you sure?",
+      		text: "You will not be able to recover this imaginary file!",
+      		type: "warning",
+      		showCancelButton: true,
+      		confirmButtonText: "Yes, delete it!",
+      		cancelButtonText: "No, cancel plx!",
+      		closeOnConfirm: false,
+      		closeOnCancel: false
+      	}, function(isConfirm) {
+      		if (isConfirm) {
+      			swal("Deleted!", "Your imaginary file has been deleted.", "success");
+      		} else {
+      			swal("Cancelled", "Your imaginary file is safe :)", "error");
+      		}
+      	});
+      });
+    </script>
+    
     <!-- Data table plugin-->
     <script type="text/javascript" src="../js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/plugins/dataTables.bootstrap.min.js"></script>
