@@ -92,13 +92,14 @@ require_once "fetch_details.php";
  
                       if($result) {
                         while ($row = $result->fetch_assoc()) {
-
+                            $id = $row['user_id'];
                             $email = $row['email'];
                             $firstname = $row['firstname'];
                             $lastname = $row['lastname'];
                             $phone = $row['phone'];
                             $role = $row['role'];
                             $started_at = $row['created_at'];
+                            $gender = $row['gender'];
 
                             echo "
                             <tr>
@@ -109,10 +110,12 @@ require_once "fetch_details.php";
                               <td>$role</td>
                               <td>
                                 <div class='tile-title-w-btn'>
-                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal' href='edit_staff.php'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' id='demoSwal' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
-                                </div>
+                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal_$id' href='edit_staff.php'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' id='demoSwal' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
+                                </div> 
+
+
                                 <!-- Modal -->
-        <div id='myModal' class='modal fade' role='dialog'>
+                              <div id='myModal_$id' class='modal fade' role='dialog'>
                                   <div class='modal-dialog'>
                                   
                                   <!-- modal content -->
@@ -158,12 +161,13 @@ require_once "fetch_details.php";
                                             <div class='col-md-9'>
                                               <div class='form-check'>
                                                 <label class='form-check-label'>
-                                                  <input class='form-check-input' type='radio' value='male' name='gender'>Male
+
+                                                  <input $gender == 'male' ? checked : '' class='form-check-input' type='radio' value='male' name='gender'>Male
                                                 </label>
                                               </div>
                                               <div class='form-check'>
                                                 <label class='form-check-label'>
-                                                  <input class='form-check-input' type='radio' value='female' name='gender'>Female
+                                                  <input $gender == 'female' ? checked : '' class='form-check-input' type='radio' value='female' name='gender'>Female
                                                 </label>
                                               </div>
                                             </div>
