@@ -32,7 +32,7 @@ require_once "fetch_details.php";
         <!-- User Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
             <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
           </ul>
         </li>
@@ -76,7 +76,7 @@ require_once "fetch_details.php";
                       <th>Email</th>
                       <th>Firstname</th>
                       <th>Lastname</th>
-                      <th>Gender</th>
+                      <th>Phone</th>
                       <th>Role</th>
                       <th>Operation</th>
                   </thead>
@@ -96,43 +96,23 @@ require_once "fetch_details.php";
                             $email = $row['email'];
                             $firstname = $row['firstname'];
                             $lastname = $row['lastname'];
-                            $gender = $row['gender'];
+                            $phone = $row['phone'];
                             $role = $row['role'];
                             $started_at = $row['created_at'];
 
                             echo "
                             <tr>
-                              <td>$email</td>
+                              <td>$email</td>                                                                                           
                               <td>$firstname</td>
                               <td>$lastname</td>
-                              <td>$gender</td>
+                              <td>$phone</td>
                               <td>$role</td>
                               <td>
                                 <div class='tile-title-w-btn'>
-                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal' href='#'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' id='demoSwal' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
+                                  <div class='btn-group'><a class='btn btn-primary' data-toggle='modal' data-target='#myModal' href='edit_staff.php'><i class='fa fa-lg fa-edit'></i></a><a class='btn btn-primary' id='demoSwal' href='#'><i class='fa fa-lg fa-trash'></i></a></div>
                                 </div>
-                                
-                              </td>
-                            </tr>
-                            
-                            ";
-                        }
-                        
-                        $result->free();
-                      }
-                      
-                      mysqli_close($connection);
-                  ?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-                      <!-- Modal -->
-                      <div id='myModal' class='modal fade' role='dialog'>
+                                <!-- Modal -->
+        <div id='myModal' class='modal fade' role='dialog'>
                                   <div class='modal-dialog'>
                                   
                                   <!-- modal content -->
@@ -192,7 +172,7 @@ require_once "fetch_details.php";
                                           <div class='tile-footer'>
                                             <div class='row'>
                                               <div class='col-md-8 col-md-offset-3'>
-                                                <button class='btn btn-primary' type='submit' data-dismiss='modal' id="demoNotify" value='Register'><i class='fa fa-fw fa-lg fa-check-circle' ></i>Update</button>&nbsp;&nbsp;&nbsp;
+                                                <button class='btn btn-primary' type='submit' data-dismiss='modal' id='demoNotify' value='Register'><i class='fa fa-fw fa-lg fa-check-circle' ></i>Update</button>&nbsp;&nbsp;&nbsp;
                                             </div>
                                             </div>
                                           </div>
@@ -205,13 +185,32 @@ require_once "fetch_details.php";
 
                                     <!-- </div>
                                     <div class='modal-footer'>
-                                      <button type='button' class='btn btn-default' id = "demoNotify" data-dismiss='modal'>Update</button>
+                                      <button type='button' class='btn btn-default' id = 'demoNotify' data-dismiss='modal'>Update</button>
                                     </div>
                                   </div> -->
                               
                                   </div>
                                 </div>
+                              </td>
+                            </tr>
+                            
+                            ";
+                        }
+                        
+                        $result->free();
+                      }
+                      
+                      mysqli_close($connection);
+                  ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+                      
     </main>
     <!-- Essential javascripts for application to work-->
     <script src="../js/jquery-3.3.1.min.js"></script>
