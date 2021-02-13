@@ -114,6 +114,12 @@
                         </div>
                       </div>
                       <div class="form-group row">
+                        <label class="control-label col-md-3">Phone</label>
+                        <div class="col-md-8">
+                          <input class="form-control col-md-8" type="text" required="required" name="phone" placeholder="Enter phone number">
+                        </div>
+                      </div>
+                      <div class="form-group row">
                         <label class="control-label col-md-3">Role</label>
                         <div class="col-md-8">
                           <input class="form-control col-md-8" type="text" required="required" name="role" placeholder="Enter Role">
