@@ -71,9 +71,14 @@
           <ul class="app-menu">
             <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Register New Staff</span></a></li>
             <li><a class="app-menu__item" href="view_staff.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Staff</span></a></li>
+<<<<<<< HEAD
             <li><a class="app-menu__item active" href="approve_reject_leave_request.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Review
               
             </span></a></li>
+=======
+            <li><a class="app-menu__item" href="register_leave.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> Register Leave</span></a></li>
+
+>>>>>>> 7efbdb4ec3deb636ea12b2c7e9096609f02efa8a
 
           </ul>
         </aside>
