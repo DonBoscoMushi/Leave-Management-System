@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
           $_SESSION['user'] = $role;
           $_SESSION['user_id'] = $user_id;
           //Open dashboard
-          header("Location: ..lms/admin/register_staff.php");
+          header("Location: ../admin/register_staff.php");
         }
         else if ((!(strcmp($db_password, $password))) && $role == "Staff")
         {
@@ -70,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
           $_SESSION['user_id'] = $user_id;
           echo
           //Opens add_staff page if username and password matches
-          header("Location: ..lms/staff/index.php");
+          header("Location: ../staff/index.php");
           //echo "staff";
         }
       }
