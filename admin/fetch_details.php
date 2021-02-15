@@ -19,6 +19,9 @@ if($_SESSION['sid'] == session_id() && $_SESSION['user'] == "Admin")
     $firstname = $row1['firstname'];
     $lastname = $row1['lastname'];
     $role = $row1['role'];
+    $email = $row1['email'];
+    $phone = $row1['phone'];
+
     }
 }
 

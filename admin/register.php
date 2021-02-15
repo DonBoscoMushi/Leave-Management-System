@@ -5,14 +5,15 @@
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $role = $_POST['role'];
     $gender = $_POST['gender'];
     $password = $_POST['lastname'];
 
     // Sql query
     $sql1 = "SELECT email FROM users WHERE email = '".$email."' ";
-    $insert = "INSERT INTO users (email, firstname, lastname, gender, password, role) 
-    VALUES ('$email','$firstname', '$lastname', '$gender', '$password', '$role')";
+    $insert = "INSERT INTO users (email, firstname, phone, lastname, gender, password, role) 
+    VALUES ('$email','$firstname', '$lastname', '$phone', '$gender', '$password', '$role')";
 
     $result1 = $connection->query($sql1);
 
