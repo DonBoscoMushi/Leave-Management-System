@@ -17,20 +17,6 @@
 <!DOCTYPE html>
     <html lang="en">
       <head>
-        <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-        <!-- Twitter meta-->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:site" content="@pratikborsadiya">
-        <meta property="twitter:creator" content="@pratikborsadiya">
-        <!-- Open Graph Meta-->
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Vali Admin">
-        <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
-        <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
-        <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
-        <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-        <title>View Leave requests</title>
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Main CSS-->
@@ -52,11 +38,11 @@
             
             <!-- User Menu-->
             <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-              <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
-              </ul>
-            </li>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+          </ul>
+        </li>
           </ul>
         </header>
         <!-- Sidebar menu-->
@@ -157,16 +143,16 @@
         </div>
         </main>
         <!-- Essential javascripts for application to work-->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
         <!-- The javascript plugin to display page loading on top-->
-        <script src="js/plugins/pace.min.js"></script>
+        <script src="../js/plugins/pace.min.js"></script>
         <!-- Page specific javascripts-->
         <!-- Data table plugin-->
-        <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript">$('#sampleTable').DataTable();</script>
         
     </body>
