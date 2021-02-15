@@ -53,7 +53,11 @@
             <!-- User Menu-->
             <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
               <ul class="dropdown-menu settings-menu dropdown-menu-right">
+<<<<<<< HEAD
                 <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+=======
+                <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+>>>>>>> essa
                 <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
               </ul>
             </li>
@@ -72,6 +76,7 @@
             <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Register New Staff</span></a></li>
             <li><a class="app-menu__item" href="view_staff.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Staff</span></a></li>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <li><a class="app-menu__item active" href="approve_reject_leave_request.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Review
               
             </span></a></li>
@@ -79,6 +84,10 @@
             <li><a class="app-menu__item" href="register_leave.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> Register Leave</span></a></li>
 
 >>>>>>> 7efbdb4ec3deb636ea12b2c7e9096609f02efa8a
+=======
+            <li><a class="app-menu__item" href="view_leave_req.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Leave Requests</span></a></li>
+
+>>>>>>> essa
 
           </ul>
         </aside>
@@ -119,12 +128,15 @@
                         </div>
                       </div>
                       <div class="form-group row">
+<<<<<<< HEAD
                         <label class="control-label col-md-3">Phone</label>
                         <div class="col-md-8">
                           <input class="form-control col-md-8" type="text" required="required" name="phone" placeholder="Enter phone number">
                         </div>
                       </div>
                       <div class="form-group row">
+=======
+>>>>>>> essa
                         <label class="control-label col-md-3">Role</label>
                         <div class="col-md-8">
                           <input class="form-control col-md-8" type="text" required="required" name="role" placeholder="Enter Role">

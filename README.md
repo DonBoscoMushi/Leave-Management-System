@@ -5,7 +5,11 @@
 | :-| :---                      | :---           |
 | 1 | MOHAMMEDALI, ESSA          | 2018-04-11043  |
 | 2 | LWABULINDA, GRACE JOSEPH   | 2018-04-02415  |
+<<<<<<< HEAD
 | 3 | BUGIMBI, EMMERICK          | 2018-04-01673  |
+=======
+| 3 | BUGIMBI, EMMERECK          | 2016-04-01673  |
+>>>>>>> essa
 | 4 | MOSHY, DENNIS H            | 2018-04-02404  |
 | 5 | IKUNDA, ELVIS              | 2018-04-01669  |
 | 6 | MUSHI, DONBONSCO NICHOLAUS | 2018-04-02407  |
