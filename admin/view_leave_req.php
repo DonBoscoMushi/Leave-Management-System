@@ -1,4 +1,18 @@
+<?php
 
+  require_once "../functions/config.php";
+  include_once "fetch_details.php";
+
+  if (empty($_SESSION)){
+    session_start();
+  }
+
+  
+  if($_SESSION['sid'] == session_id() && $_SESSION['user'] == "Admin")
+  {
+    $user_id = $_SESSION['user_id'];
+
+    ?>
 
 <!DOCTYPE html>
     <html lang="en">
@@ -87,6 +101,7 @@
                         <th>End Date</th>
                         <th>Date applied</th>
                         <th>Status</th>
+                        <th>Operation</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -156,4 +171,8 @@
         
     </body>
     </html>
+    <?php
+  }
+
+  ?>
     
