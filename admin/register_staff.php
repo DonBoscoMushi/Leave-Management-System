@@ -53,7 +53,7 @@
             <!-- User Menu-->
             <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
               <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                <li><a class="dropdown-item" href="../page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+                <li><a class="dropdown-item" href="profile.php"><i class="fa fa-user fa-lg"></i> Profile</a></li>
                 <li><a class="dropdown-item" href="../logout.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
               </ul>
             </li>
@@ -71,6 +71,8 @@
           <ul class="app-menu">
             <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Register New Staff</span></a></li>
             <li><a class="app-menu__item" href="view_staff.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Staff</span></a></li>
+            <li><a class="app-menu__item" href="register_leave.php"><i class="app-menu__icon fa fa-book"></i><span class="app-menu__label"> Register Leave</span></a></li>
+            <li><a class="app-menu__item" href="view_leave_req.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Leave Requests</span></a></li>
 
           </ul>
         </aside>
@@ -108,6 +110,12 @@
                         <label class="control-label col-md-3">Email</label>
                         <div class="col-md-8">
                           <input class="form-control col-md-8" type="email" required="required" name="email" placeholder="Enter email address">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="control-label col-md-3">Phone</label>
+                        <div class="col-md-8">
+                          <input class="form-control col-md-8" type="text" required="required" name="phone" placeholder="Enter phone number">
                         </div>
                       </div>
                       <div class="form-group row">
