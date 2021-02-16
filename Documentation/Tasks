@@ -1,0 +1,47 @@
+BROAD TASKS OF THE PROJECT;
+1. Scope Management
+ This defines the scope of the project and all activities needed to be done to make a
+deliverable software.
+2. Project Estimation
+ For effective management accurate estimation of various measures is a must. It involves
+software size estimation, effort estimation, time estimation and cost estimation.
+3. Project Scheduling
+ This is the roadmap of all activities to be done with specific order and within time slot
+allotted to each activity.
+4. Resource Management
+ It’s necessary to estimate and allocate adequate resources for the project.
+5. Project Risk Management
+ This involves identification, analyzing and making provision for predictable and nonpredictable risks in the project.
+6. Project Execution and Monitoring
+ Tasks described in the project planning are executed according to their schedules.
+7. Configuration Management
+ Process of tracking and controlling the changes in software in terms of the requirements
+design, functions and development of the product.
+
+
+SPECIFIC TASKS
+
+1.Meeting with client for requirement gathering
+2.Requirement capture (dep 1)
+3.Drafting of requirement document (dep 2)
+4.Reviewing of requirement document (dep 3)
+
+5.Create a technical development plan (dep 4)
+6.Budget planning  (dep 4)
+7.Timeline planning ( dep 4)
+8.Combine technical plan, budget and timeline (dep 5,6,7)
+9.Review Development plan (dep 8)
+
+10.System design (dep 9)
+11.Database design (dep 9)
+12.System coding and development (dep 10,11)
+13.Drafting documentation and manuals for user and client (dep 12)
+14.Reviewing documentation and manual (dep 13)
+
+15.Test planning (dep 12)
+16.Testing the system with small group of users and the client (dep 14,15)
+17.Improve documentation if any feedback (dep 16)
+18.Maintenance planning 
+
+19.Rollout system (dep 16, 17)
+20.Training users to use the system (dep 17)
