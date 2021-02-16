@@ -63,7 +63,7 @@
     </aside>
     <main class="app-content">
       <div class="app-title">
-        <div>gi
+        <div>
           <h1><i class="fa fa-file-code-o"></i> Apply Leave</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
