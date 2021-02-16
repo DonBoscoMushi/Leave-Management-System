@@ -55,9 +55,10 @@
         </div>
       </div>
       <ul class="app-menu">
-            <li><a class="app-menu__item " href="register_staff.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Register New Staff</span></a></li>
-            <li><a class="app-menu__item" href="view_staff.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Staff</span></a></li>
-            <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> Register Leave</span></a></li>
+      <li><a class="app-menu__item" href="register_staff.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> Register New Staff</span></a></li>
+        <li><a class="app-menu__item" href="view_staff.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Staff</span></a></li>
+        <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa fa-book"></i><span class="app-menu__label"> Register Leave</span></a></li>
+        <li><a class="app-menu__item" href="view_leave_req.php"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label"> View Leave Requests</span></a></li>
 
       </ul>
     </aside>
@@ -71,7 +72,44 @@
           <li class="breadcrumb-item"><a href="#">Register Leave</a></li>
         </ul>
       </div>
-
+      <div class="row">
+            
+            <div class="col-md-6">
+              <div class="tile">
+                  <h3 class="tile-title" style="text-align: center;"><i class="fa fa-edit"></i> Register New Leave</h3>
+                  <div class="tile-body">
+                    <form class="form-horizontal" method="post" action="register.php">
+                      <div class="form-group row">
+                        <label class="control-label col-md-3">Leave Type</label>
+                        <div class="col-md-8">
+                          <input class="form-control" type="text" name="leavetypename" required="required" placeholder="Enter Leave Type">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="control-label col-md-3">Leave Description</label>
+                        <div class="col-md-8">
+                          <input class="form-control" type="text" name="leavedescription" required="required" name="leavedescription" placeholder="Enter the description of the Leave Type">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="control-label col-md-3">Maximum Number of Days Allowed</label>
+                        <div class="col-md-8">
+                          <input class="form-control col-md-8" type="number" onkeypress="return event.charCode >= 48" min="1" required="required" name="maxdays" placeholder="Enter maximum days for this Leave Type">
+                        </div>
+                      </div>
+                      <div class="tile-footer">
+                    <div class="row">
+                      <div class="col-md-8 col-md-offset-3">
+                        <button class="btn btn-primary" type="submit" value="Register"><i class="fa fa-fw fa-lg fa-check-circle" ></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i action="reset"class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                      </div>
+                    </div>
+                  </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+                  <div class="clearix"></div>
+          </div>
 
 
 
