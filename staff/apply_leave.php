@@ -73,30 +73,96 @@
       </div>
 
       <div class="tile">
-            <div class="row">
+      <div class="row col-md-12">
+            
               <div class="col-lg-6">
                 <form>
+                <div class="form-group">
+          <div class="tile">
+            <h3 class="tile-title">Apply</h3>
+            <div class="tile-body">
+              <form class="form-horizontal">
+                <div class="form-group row">
+                  <label class="control-label col-md-3">Name</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="text" placeholder="Enter full name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-md-3">Email</label>
+                  <div class="col-md-8">
+                    <input class="form-control col-md-8" type="email" placeholder="Enter email address">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-md-3">Department</label>
+                  <div class="col-md-8">
+                    <textarea class="form-control" rows="4" placeholder="Enter your depatment"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-md-3">Gender</label>
+                  <div class="col-md-9">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="gender">Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="gender">Female
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                 
+
+
+
+
+
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Personal Particulars</label>
+                    <label for="exampleInputEmail1">Leave Type</label>
                     <input class="form-control" id="exampleInputName" type="name" aria-describedby="grace " placeholder="Enter name"><small class="form-text text-muted" id="name"></small>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Designation</label>
+                    <label for="exampleInputPassword1">Proposed date of depature</label>
                     <input class="form-control" id="exampleInputPlace" type="name" placeholder="name">
                   </div>
                   <div class="form-group">
-                    <label for="exampleSelect1">Department</label>
+                    <label for="exampleSelect1">Gross numbder of days accumulated up to the end of las academic year</label>
                     <input class="form-control" id="exampleDepartment" type="department name placeholder="department name>
                       
                       
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="exampleSelect2">The following members of my family</label>
+                    <label for="exampleSelect2">Number of Leave days due for this academic year</label>
                     <input class="form-control" id="exampleFamily" multiple="members">
                       
                     
                   </div>
+                  <div class="form-group">
+                    <label for="exampleSelect2">My leave will due to be expired on </label>
+                    <input class="form-control" id="exampleFamily" multiple="members">
+                      
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelect2">Signature</label>
+                    <input class="form-control" id="exampleFamily" multiple="members">
+                      
+                    
+                  </div><div class="form-group">
+                    <label for="exampleSelect2">Date</label>
+                    <input class="form-control" id="exampleFamily" multiple="members">
+                      
+                    
+                  </div>
+
+                 
+                 
+                 
                  
             <div class="tile-footer">
               <button class="btn btn-primary" type="submit">Submit</button>
