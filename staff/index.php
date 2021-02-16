@@ -58,7 +58,7 @@
       <ul class="app-menu">
         <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-user"></i><span class="app-menu__label">Profile</span></a></li>
         
-        <li><a class="app-menu__item " href="docs.html"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Docs</span></a></li>
+        <li><a class="app-menu__item " href="apply_leave.php"><i class="app-menu__icon fa fa-file-code-o"></i><span class="app-menu__label">Apply Leave</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
