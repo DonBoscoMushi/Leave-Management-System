@@ -60,7 +60,7 @@ require_once "fetch_details.php";
       <div class="app-title">
         <div>
           <h1><i class="fa fa-th-list"></i> Registered Staff</h1>
-          <p>This is the list of registered staff</p>
+          <p>These are the list of registered staff</p>
         </div>
         <ul class="app-breadcrumb breadcrumb side">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
