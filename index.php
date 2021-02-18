@@ -1,4 +1,5 @@
 <?php 
+global $credentials_err;
 
 require_once "functions/config.php";
 
@@ -75,8 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         }
       }
     }else {
-      $credentials_err = "Please check your credentials";
-      echo $credentials_err;
+      $credentials_err="The Username and Password entered did not match our records. Please double-check and try again.";
     }
 
   }
@@ -131,6 +131,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="sweet-alert sa-error-container ">
           </div>
         </form>
+        
         <form class="forget-form" action="index.html">
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Forgot Password ?</h3>
           <div class="form-group">
@@ -144,6 +145,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Back to Login</a></p>
           </div>
         </form>
+      </div>
+      <div>
+          <?php echo $credentials_err; ?>
       </div>
     </section>
     <!-- Essential javascripts for application to work-->
