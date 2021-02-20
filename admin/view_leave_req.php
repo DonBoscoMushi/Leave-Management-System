@@ -17,6 +17,7 @@
 <!DOCTYPE html>
     <html lang="en">
       <head>
+      <title>Leave Request</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Main CSS-->
@@ -26,7 +27,7 @@
       </head>
       <body class="app sidebar-mini">
         <!-- Navbar-->
-        <header class="app-header"><a class="app-header__logo" font-family="Nunito" href="../index.html"><?php echo $_SESSION['user']; ?></a>
+        <header class="app-header"><a class="app-header__logo" font-family="Nunito" href="#"><?php echo $_SESSION['user']; ?></a>
           <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
           <!-- Navbar Right Menu-->
           <ul class="app-nav">

@@ -2,7 +2,6 @@
 
 require_once "fetch_details.php";
 
-
 ?>
 
 <!DOCTYPE html>
