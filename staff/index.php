@@ -70,10 +70,66 @@
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
           <li class="breadcrumb-item"><a href="#">Profile</a></li>
         </ul>
-      </div>
+      </div>  
 
+      <div class="container">
+        <div class="main-body">
 
-
+                <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <h6 class="mb-0">First Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        <?php echo $firstname; ?>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <h6 class="mb-0">Last Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        <?php echo $lastname; ?>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <h6 class="mb-0">Email</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        <?php echo $email; ?>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <h6 class="mb-0">Phone</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        <?php echo $phone; ?>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <h6 class="mb-0">Role</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        <?php echo $role; ?>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
     </main>
     <!-- Essential javascripts for application to work-->
